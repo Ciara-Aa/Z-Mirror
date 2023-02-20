@@ -390,15 +390,15 @@ def zip_mirror(update, context):
 
 @ratelimiter
 def qb_mirror(update, context):
-    _mirror_leech(context.bot, update.message, isQbit=True)
+    _mirror_leech(context.bot, update.message)
 
 @ratelimiter
 def qb_unzip_mirror(update, context):
-    _mirror_leech(context.bot, update.message, extract=True, isQbit=True)
+    _mirror_leech(context.bot, update.message, extract=True)
 
 @ratelimiter
 def qb_zip_mirror(update, context):
-    _mirror_leech(context.bot, update.message, True, isQbit=True)
+    _mirror_leech(context.bot, update.message, True)
 
 @ratelimiter
 def leech(update, context):
@@ -414,15 +414,15 @@ def zip_leech(update, context):
 
 @ratelimiter
 def qb_leech(update, context):
-    _mirror_leech(context.bot, update.message, isQbit=True, isLeech=True)
+    _mirror_leech(context.bot, update.message, isLeech=True)
 
 @ratelimiter
 def qb_unzip_leech(update, context):
-    _mirror_leech(context.bot, update.message, extract=True, isQbit=True, isLeech=True)
+    _mirror_leech(context.bot, update.message, extract=True, isLeech=True)
 
 @ratelimiter
 def qb_zip_leech(update, context):
-    _mirror_leech(context.bot, update.message, True, isQbit=True, isLeech=True)
+    _mirror_leech(context.bot, update.message, True, isLeech=True)
 
 @ratelimiter
 def cloneNode(update, context):
